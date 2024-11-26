@@ -1,0 +1,90 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 20, 20);
+}
+  
+ 
+  .divCalculadora {
+    width: 90%; 
+    max-width: 400px; 
+    padding: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url('Fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(193, 239, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ingresoTexto {
+    background-color: rgb(182, 209, 175);
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .boton {
+    color: white;
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #82a08b;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .boton:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .numeros, .operadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .operadores {
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .boton {
+      width: 50px;
+      height: 50px;
+      font-size: 0.9rem;
+    }
+  
+    .divCalculadora {
+      padding: 15px;
+    }
+  }
+  .res{
+    background-color: #82a08b;
+    color: white;
+    border: 2px white solid;
+    width: 85%;
+  }
+  h1{
+    color: #f9d6ff;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+  }
